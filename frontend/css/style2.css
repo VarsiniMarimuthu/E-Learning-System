@@ -1,0 +1,28 @@
+/* styles.css */
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 600px) { 
+    body { background-color: lightblue; }
+}
+
+/* iPad styles */
+@media (min-width: 601px) and (max-width: 1144px) { 
+    body { background-color: lightgreen; }
+}
+
+/* Laptop styles */
+@media (min-width: 1145px) and (max-width: 1440px) { 
+    body { background-color: lightyellow; }
+}
+
+/* Large screen styles */
+@media (min-width: 1441px) { 
+    body { background-color: lightcoral; }
+}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style2.css">
+    <title>Registration - E-Learning</title>
+    <style>
+        /* Reuse the same styles from index.html */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .nav__logo a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+        .nav__links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .link {
+            margin-left: 20px;
+        }
+
+        .link a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background 0.3s;
+        }
+
+        .link a:hover {
+            background-color: #444;
+            border-radius: 5px;
+        }
+
+        /* Header Styles */
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #1621ba;
+            color: white;
+        }
+
+        .heading__1 {
+            font-weight: bold;
+        }
+
+        /* Container Styles */
+        .container {
+            padding: 10px;
+            display: flex;
+            box-shadow: 90px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image__box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .image__container img {
+            width: 300px; /* Adjust as needed */
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .description__container {
+            max-width: 500px; /* Adjust as needed */
+        }
+
+        h2 {
+            margin: 0 0 10px;
+        }
+
+        p {
+            line-height: 1.5;
+            color: #555;
+            margin: 0;
+        }
+
+        /* Registration Form Styles */
+        .form__container {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .form__container h2 {
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form input[type="submit"] {
+            background-color: #1621ba;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #444;
+        }
+
+        /* New Section Styles */
+        .info__container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 90%;
+        }
+
+        .info__section {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .info__section h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .info__section p {
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #232323;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav__logo"><a href="#">E-Learning</a></div>
+        <ul class="nav__links">
+            <li class="link"><a href="../html/index.html">Home</a></li>
+            <li class="link"><a href="../html/reg.html">Registration</a></li>
+            <li class="link"><a href="../html/profile.html">Student Profile</a></li>
+            <li class="link"><a href="#">Course</a></li>
+            <li class="link"><a href="#">About</a></li>
+            <li class="link"><a href="#">Contact</a></li>
+            <li class="link"><a href="#">Admin</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>
+            Best Learning<br />
+            <span class="heading__1">Education Platform</span><br />
+            <span class="heading__1">in The World</span>
+        </h1>
+    </header>
+
+    <!-- Content Section -->
+    <section class="container">
+        <!-- Image and Description -->
+        <div class="image__box">
+            <div class="image__container">
+                <img src="../img/college.webp" alt="E-Learning" />
+            </div>
+            <div class="description__container">
+                <h1>E-Learning</h1>
+                <h2>Project eLearning brings together the services of all departments under one umbrella.</h2>
+                <p>
+                    Project E-Learning is an initiative aimed at creating a unified platform where all services and interactions between citizens and government departments can occur efficiently. By leveraging technology, it reduces the hassle of physical administration processes and allows faster access to information and services, promoting a knowledge-based society.
+                </p>
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="form__container">
+            <h2>STUDENT REGISTRATION PAGE</h2>
+            <form id="registrationForm">
+                <input type="text" id="fullname" placeholder="Full Name" required />
+                <input type="password" id="password" placeholder="Password" required />
+                <input type="text" id="address" placeholder="Address" required />
+                <input type="email" id="email" placeholder="Email ID" required />
+                <input type="tel" id="phone" placeholder="Phone No" required />
+                <input type="text" id="course" placeholder="Course" required />
+                <input type="date" id="date" required />
+                <input type="submit" value="Submit" />
+            </form>
+            
+            <script>
+                document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent form from submitting the traditional way
+            
+                    // Get form data
+                    const fullname = document.getElementById('fullname').value;
+                    const password = document.getElementById('password').value;
+                    const address = document.getElementById('address').value;
+                    const email = document.getElementById('email').value;
+                    const phone = document.getElementById('phone').value;
+                    const course = document.getElementById('course').value;
+                    const date = document.getElementById('date').value;
+            
+                    // Store the data in localStorage
+                    localStorage.setItem('fullname', fullname);
+                    localStorage.setItem('password', password);
+                    localStorage.setItem('address', address);
+                    localStorage.setItem('email', email);
+                    localStorage.setItem('phone', phone);
+                    localStorage.setItem('course', course);
+                    localStorage.setItem('date', date);
+            
+                    // Redirect to the sign-in page
+                    window.location.href = '../html/sign-in.html';
+                });
+            </script>
+            
+        </div>
+
+        <!-- New Information Sections -->
+        <section class="container">
+            <!-- New Information Sections -->
+            <div class="info__container" style="display: flex; justify-content: space-between; flex-wrap: nowrap; gap: 20px;">
+                <div class="info__box" style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 16px; width: 24%; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+                    <h3 style="margin-top: 0;">E-Learning</h3>
+                    <img src="../img/College2.jpg" alt="E-Learning" style="width: 100%; border-radius: 4px;" />
+                    
+                </div>
+                <div class="info__box" style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 16px; width: 24%; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+                    <h3 style="margin-top: 0;">Gallery</h3>
+                    <img src="../img/college3.jpg" alt="Gallery" style="width: 100%; border-radius: 4px;" />
+                    <p>Project E-Learning initiated to bring together the services of all the departments under one single umbrella.</p>
+                </div>
+                <div class="info__box" style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 16px; width: 24%; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+                    <h3 style="margin-top: 0;">Suppliers Directory</h3>
+                    <p><strong>Harshith.M</strong></p>
+                    <p>(+91)9945673510</p>
+                    <p><strong>Mohammed Aziz</strong></p>
+                    <p>(+91)9738054647</p>
+                    <p><strong>Jeevan.M.Anand</strong></p>
+                    <p>(+91)9945753547</p>
+                </div>
+                <div class="info__box" style="background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px; padding: 16px; width: 24%; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);">
+                    <h3 style="margin-top: 0;">Get in Touch</h3>
+                    <p><strong>Email:</strong></p>
+                    <p>mohammedaziz04@gmail.com</p>
+                    <p><strong>Address:</strong></p>
+                    <p>Hebbal</p>
+                    <p>Bangalore</p>
+                    <p>Karnataka</p>
+                    <p><strong>Phone:</strong></p>
+                    <p>(+91)9738054647</p>
+                </div>
+            </div>
+        </section>
+        
+
+    <!-- Footer -->
+    <footer style="background-color: #1b1a1a; color: white; padding: 20px 0; text-align: center; position: relative; bottom: 0; width: 100%;">
+        <p>&copy; 2024 E-Learning Platform. All Rights Reserved.</p>
+        <p>
+            <a href="#" style="color: white; text-decoration: none; margin-right: 15px;">Privacy Policy</a>
+            <a href="#" style="color: white; text-decoration: none; margin-right: 15px;">Terms of Service</a>
+            <a href="#" style="color: white; text-decoration: none;">Contact Us</a>
+        </p>
+    </footer>
+</body>
+</html>
